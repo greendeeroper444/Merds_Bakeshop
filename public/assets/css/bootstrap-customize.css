@@ -1,0 +1,92 @@
+.alert{
+    position:relative;
+    padding:1rem 1rem;
+    margin-bottom:1rem;
+    border:1px solid transparent;
+    border-radius:.25rem;
+    text-align: center;
+    font-size: 15px;
+}
+
+.alert-heading{
+    color:inherit
+}
+
+.alert-link{
+    font-weight:700
+}
+
+.alert-dismissible{
+    padding-right:3rem
+}
+
+.alert-dismissible .btn-close{
+    position:absolute;
+    top:0;
+    right:0;
+    z-index:2;
+    padding:1.25rem 1rem
+}
+
+.alert-link{
+    color:#34383c
+}
+
+.alert-success-merds{
+    color:#512f0f;
+    background-color:#e7dcd1;
+    border-color:#dbccba
+}
+
+.alert-success-merds .alert-link{
+    color:#512f0f
+}
+
+
+
+@media(max-width: 768px){
+    .alert{
+        position:relative;
+        padding:1rem 1rem;
+        margin-bottom:1rem;
+        border:1px solid transparent;
+        border-radius:.20rem;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .alert-heading{
+        color:inherit
+    }
+
+    .alert-link{
+        font-weight:700
+    }
+
+    .alert-dismissible{
+        padding-right:3rem
+    }
+
+    .alert-dismissible .btn-close{
+        position:absolute;
+        top:0;
+        right:0;
+        z-index:2;
+        padding:1.25rem 1rem
+    }
+
+    .alert-link{
+        color:#34383c
+    }
+
+    .alert-success-merds{
+        color:#512f0f;
+        background-color:#e7dcd1;
+        border-color:#dbccba
+    }
+
+    .alert-success-merds .alert-link{
+        color:#512f0f
+    }
+
+}

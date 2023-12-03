@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;1,500&display=swap');
+
+/* Var() sources */
+:root{
+    --main-color: #FF9000;
+    --main-color-hover: #E1891D;
+    --main-color-border: #fdb24e;
+    --main-color-shadow: #ffab3d;
+    --bg-2: #F9F9F9;
+    --bg-2-hover: #EEE;
+    --black: #444;
+    --light-color: #666;
+    --border: 1rem solid rgba(0,0,0,.1);
+    --border-hover: .1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: all .2s linear;
+    transition: width none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+    background: #FFFFF5;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background:var(--black);
+}
+
+h1{
+	font-size: 36px;
+	margin-bottom: 50px;
+	color: #333;
+}
+
+.btn{
+	display: block;
+	padding: 12px 24px;
+	font-size: 18px;
+	border: none;
+	border-radius: 4px;
+	background-color: var(--main-color);
+	color: #fff;
+	text-decoration: none;
+	margin: 10px;
+	transition: background-color 0.3s ease;
+}
+
+.btn:hover{
+	background-color: var(--main-color-hover);
+}
+
+.btn:focus{
+    border: solid var(--main-color-border);
+    outline: none;
+    box-shadow:0 0 0 .25rem var(--main-color-shadow);
+    background-color: var(--main-color-hover);
+    color: #fff;
+}
+
+/* login form */
+
+.login-form-container.active{
+    right: 0;
+}
+
+.login-form-container form{
+    background: #fff;
+    border: var(--border);
+    width: 40rem;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    margin: 2rem;
+}
+
+.logo-img{
+    width: 600px;
+    height: 600px;
+    position: relative;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+.login-form-container form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+    text-align: center;
+}
+
+.login-form-container form span{
+    display: block;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    text-align: left;
+}
+
+.login-form-container form .box{
+    width: 100%;
+    margin: .7rem 0;
+    font-size: 1.6rem;
+    border: var(--border);
+    border-radius: .5rem;
+    padding: 1rem 1.2rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.login-form-container form .checkbox{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem 0;
+}
+
+.login-form-container form .checkbox label{
+    font-size: 1.5rem;
+    color: var(--light-color);
+    cursor: pointer;
+}
+
+.login-form-container form .btn{
+    text-align: center;
+    width: 100%;
+    margin: 1.5rem 0;
+}
+
+.login-form-container form p{
+    padding-top: .8rem;
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+
+.login-form-container form p a{
+    color: var(--green);
+    text-decoration: underline;
+}
+
+.login-form-container #close-login-btn{
+    position: absolute;
+    top: 1.5rem; right: 2.5rem;
+    font-size: 5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+
+/* register form */
+.register-form-container.active{
+    right: 0;
+}
+
+.register-form-container form{
+    background: #fff;
+    border: var(--border);
+    width: 70rem;
+    height: 60rem;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    margin: 2rem;
+}
+
+.register-form-container .form-group{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-top: 30px;
+}
+
+.logo-img{
+    width: 150px;
+    height: 140px;
+    position: relative;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+.register-form-container form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+    text-align: center;
+}
+
+.register-form-container form span{
+    display: block;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    text-align: left;
+}
+
+.register-form-container form .box{
+    width: 100%;
+    margin: .7rem 0;
+    font-size: 1.6rem;
+    border: var(--border);
+    border-radius: .5rem;
+    padding: 1rem 1.2rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.register-form-container form .btn{
+    text-align: center;
+    justify-content: flex-end;
+    width: 50%;
+    margin: 2.5rem 0;
+}
+
+.register-form-container .btn-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.register-form-container form p{
+    padding-top: .8rem;
+    color: var(--light-color);
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+
+.register-form-container form p a{
+    color: var(--green);
+    text-decoration: underline;
+}
+
+.register-form-container #close-register-btn{
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    font-size: 5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.input-group{
+    position: relative;
+}
+
+.input-group .toggle-password{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.input-group .toggle-password i{
+    color: var(--black);
+}
+
+.input-group .toggle-password i.fa-eye-slash{
+    display: none;
+}
+
+.input-group .toggle-password.active i.fa-eye-slash{
+    display: block;
+}
+
+.input-group .toggle-password.active i.fa-eye{
+    display: none;
+}
+
+
+/* FORGOT PASSWORD */
+.forgot-container{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.forgot-container h2{
+    text-align: center;
+}
+
+.forgot-container label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.forgot-container input[type="email"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.forgot-container span{
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.mt-2{
+    color: #ff0000 !important;
+    font-size: 14px;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 768px){
+
+    html{
+        font-size: 55.5%;
+    }
+
+    .register-form-container form{
+        position: relative;
+        left: -15px;
+        width: 105%;
+        margin: 2rem auto;
+    }
+
+}
+
+@media(max-width: 532px){
+
+    .register-form-container form{
+        margin-left: 3% !important;
+        width: 100%;
+        margin: 2rem auto;
+    }
+
+}
+
+@media(max-width: 480px){
+    .register-form-container form{
+        padding: 1rem;
+        height: auto;
+        margin-left: 1% !important;
+        width: 105%;
+    }
+
+    .register-form-container form h3{
+        font-size: 2rem;
+    }
+
+    .register-form-container form span,
+    .register-form-container form .box,
+    .register-form-container form .btn,
+    .register-form-container form p{
+        font-size: 1.3rem;
+    }
+}

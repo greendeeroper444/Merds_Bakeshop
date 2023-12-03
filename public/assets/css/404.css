@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;1,500&display=swap');
+
+/* Var() sources */
+:root{
+    --main-color: #FF9000;
+    --main-color-hover: #E1891D;
+    --main-color-border: #fdb24e;
+    --main-color-shadow: #ffab3d;
+    --bg-2: #F9F9F9;
+    --bg-2-hover: #EEE;
+    --black: #444;
+    --light-color: #666;
+    --border: 1rem solid rgba(0,0,0,.1);
+    --border-hover: .1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.visit-homepage-404{
+	display: block;
+	padding: 12px 24px;
+	font-size: 18px;
+	border: none;
+	border-radius: 4px;
+	background-color: var(--main-color);
+	color: #fff;
+	text-decoration: none;
+	margin: 10px;
+	transition: background-color 0.3s ease;
+}
+
+.visit-homepage-404:hover{
+	background-color: var(--main-color-hover);
+    color: #fff;
+}
+
+.visit-homepage-404:focus{
+    border: solid var(--main-color-border);
+    outline: none;
+	background-color: var(--main-color-hover);
+    color: #fff;
+    box-shadow:0 0 0 .25rem var(--main-color-shadow)
+}
